@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question or share an idea
+    url: https://github.com/pankajrudrawar/terraform-aws-fsx-ontap/discussions
+    about: Use Discussions for questions about using the module
+  - name: Report a security problem
+    url: https://github.com/pankajrudrawar/terraform-aws-fsx-ontap/security/advisories/new
+    about: Report vulnerabilities privately instead of opening an issue

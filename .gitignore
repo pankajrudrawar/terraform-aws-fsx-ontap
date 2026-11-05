@@ -1,0 +1,36 @@
+# Local .terraform directories
+**/.terraform/*
+
+# State files
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files that may contain secrets
+*.tfvars
+*.tfvars.json
+!examples/**/terraform.tfvars.example
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# Plan output
+*.tfplan
+
+# Lock file is intentionally not committed for modules
+.terraform.lock.hcl
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store

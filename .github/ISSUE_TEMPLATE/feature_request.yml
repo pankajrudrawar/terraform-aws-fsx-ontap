@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest a new option or behavior
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the use case, not only the solution
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: New variables or behavior you have in mind. An example module call helps.
+      render: hcl
+  - type: input
+    id: provider-docs
+    attributes:
+      label: Provider documentation
+      description: Link to the provider argument or resource this relies on, if there is one
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Would you like to open the pull request?
+      options:
+        - "Yes"
+        - "Maybe, with some guidance"
+        - "No"
