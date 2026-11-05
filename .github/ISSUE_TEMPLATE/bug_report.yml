@@ -1,0 +1,50 @@
+name: Bug report
+description: Something in the module does not work as expected
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Please do not include secrets. For security problems, use the Security tab instead of an issue.
+  - type: input
+    id: module-version
+    attributes:
+      label: Module version
+      description: Tag or commit you are using
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: input
+    id: tool-versions
+    attributes:
+      label: Terraform or OpenTofu version
+      placeholder: Terraform 1.9.8
+    validations:
+      required: true
+  - type: input
+    id: provider-version
+    attributes:
+      label: Provider version
+      placeholder: hashicorp/aws 6.28.0
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: config
+    attributes:
+      label: Minimal configuration
+      description: The smallest module call that reproduces the problem
+      render: hcl
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Error or plan output
+      render: text
